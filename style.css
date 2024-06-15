@@ -8,7 +8,7 @@ body{
     
       
 }
-
+/* ---------------- Navber ------------------  */
 .navber{
     display: flex;
     align-items: center;
@@ -27,6 +27,11 @@ nav ul{
 nav ul li{
     display: inline-block;
     margin-right: 20px;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
 }
 a{
     text-decoration: none;
@@ -135,10 +140,54 @@ p{
  .col-4{
     font-size: 14px;
  }
- .rating .fa-star{
+.rating .fa-star{
     color: #ff523b;
  }
 
  .col-4:hover{
     transform: translateY(-10px);
+ }
+
+ /* --------------- Offer -------------- / */
+ .offer{
+    background: radial-gradient(#fff,#ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+ }
+
+ .col-2 img{
+    padding: 50px;
+ }
+
+ small{
+    color: #555;
+ }
+
+
+
+
+ /* ----------------- media query for menu ------------  */
+
+ @media only screen and (max-width:800px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #d69696;
+        width: 100%;
+        overflow: hidden;
+        transition:max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px 10px 0 50px;
+
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
  }
